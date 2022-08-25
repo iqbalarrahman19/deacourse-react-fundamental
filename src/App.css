@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Navbar Link Active */
+.nav-link{
+  margin-left: 8px;
+}
+.navbar-link.active{
+  color: white;
+  border-bottom: 3px solid;
+}
+/* End Navbar Link Active */
+
+/* start jumbutron*/
+.container-image {
+  max-width: 100%;
+}
+.image {
+  width: 100%;
+  height: 70vh;
+}
+
+.bg-image {
+  position: absolute;
+  background-color: rgba(0, 0,0,0.6) !important;
+  width: 100%;
+  height: 70vh;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  margin-top: -260px;
+  color: white;
+  text-align: center;
+}
+
+.text1 {
+  animation-name: moveRight;
+  animation-duration: 1s;
+}
+
+.text2 {
+  margin-left: 63px;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+}
+
+.text3 {
+  margin-left: 109px;
+  animation-name: moveRight;
+  animation-duration: 1s;
+}
+
+.text4 {
+  margin-left: 114px;
+}
+ @media screen and (max-width: 600px){
+  .title {
+    position: relative;
+    z-index: 1;
+    margin-top: -260px;
+    color: white;
+    text-align: center;
+  }
+
+  .text1 {
+    margin-right: 72px;
+    animation-name: moveRight;
+    animation-duration: 1s;
+  }
+  .text2 {
+    margin-right: 94px;
+    animation-name: moveLeft;
+    animation-duration: 1s;
+  }
+  .text3 {
+    margin-left: 10px;
+    animation-name: moveRight;
+    animation-duration: 1s;
+  }
+  .text4 {
+    margin-left: 15px;
+  }
+ }
+ 
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/* end jumbutron*/
+
+/* start About */
+.judul {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.body-content {
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+/* end About */
+
+/* start footer */
+.footer {
+  height: 40px;
+  padding-top: 10px;
+  color: #FFFFFF;
+  background-color: #212529;
+  text-align: center;
+  margin-top: 50px;
+}
+/* end footer */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
